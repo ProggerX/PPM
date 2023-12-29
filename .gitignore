@@ -1,5 +1,8 @@
 .ccls-cache/
 result
 out
+cmd_output.txt
+compile_commands.json
 .envrc
 .direnv/
+*output.txt

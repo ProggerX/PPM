@@ -5,6 +5,7 @@
       "-c",
       "-oout",
       "-I./include/",
+      "-w",
       "./src/main.cpp"
     ],
     "directory": "/home/proggerx/coding/ppm",
