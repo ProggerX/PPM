@@ -24,6 +24,7 @@ just install
 ```sh
 ppm
 ```
+if ```~/.local/bin``` in your path, in other situation move binary from ```~/.local/bin/ppm``` to your path directory
 ### Keymaps:
 q - exit
 Tab - select next widget
