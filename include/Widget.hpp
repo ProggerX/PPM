@@ -11,16 +11,20 @@ public:
 		// print area
 		for (int i = _x; i < _x + _width; i += _width - 1) {
 			for (int j = _y + 1; j < _y + _height - 1; j++) {
-				mvwprintw(scr, j, i, "|");
+				mvwprintw(scr, j, i, "│");
 			}
 		}
 		for (int i = _y; i < _y + _height; i += _height - 1) {
 			for(int j = _x + 1; j < _x + _width - 1; j++) {
-				mvwprintw(scr, i, j, "-");
+				mvwprintw(scr, i, j, "─");
 			}
 		}
+		mvwprintw(scr, _y, _x, "┌");
+		mvwprintw(scr, _y + _height - 1, _x, "└");
+		mvwprintw(scr, _y, _x + _width - 1, "┐");
+		mvwprintw(scr, _y + _height - 1, _x + _width - 1, "┘");
 		if (is_selected) {
-			mvwprintw(scr, _y + 1, _x + 1, "*");
+			mvwprintw(scr, _y, _x, "*");
 		}
 	}
 	virtual void print_text(WINDOW* scr) = 0;

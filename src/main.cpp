@@ -6,13 +6,13 @@
 #include <Stopwatch.hpp>
 #include "config.hpp"
 
-std::string keys = "qwertyuiopasdfghjklzxcvbnm[].,1234567890 ";
+std::string keys = "qwertyuiopasdfghjklzxcvbnm[].,1234567890\n\t ";
 
 int selected = 0;
 
 void get_global_events(char ch, std::vector<Widget*>& wgts) {
 	switch (ch) {
-		case ' ': {
+		case '\t': {
 			if (selected >= wgts.size() - 1) {
 				selected = 0;
 				wgts[wgts.size() - 1]->is_selected = false;
@@ -28,6 +28,8 @@ void get_global_events(char ch, std::vector<Widget*>& wgts) {
 }
 
 int main() {
+	setlocale(LC_ALL, "");
+
 	Stopwatch stpw;
 	stpw.start();
 
