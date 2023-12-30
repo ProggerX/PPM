@@ -12,6 +12,8 @@
 - Git (just for git clone)
 - Linux host
 - terminal with unicode support
+### Requirements for default(example) config:
+- cowsay
 
 # Installation
 ```sh
@@ -26,14 +28,14 @@ ppm
 ```
 if ```~/.local/bin``` in your path, in other situation move binary from ```~/.local/bin/ppm``` to your path directory
 ### Keymaps:
-q - exit
-Tab - select next widget
-Events only captured by selected widget
-h j k l (like vim) - move selected widget
-[ - widget width - 1
-] - widget width + 1
-, - widget height - 1
-. - widget height + 1
+- q - exit
+- Tab - select next widget
+- Events only captured by selected widget
+- h j k l (like vim) - move selected widget
+- [ - widget width - 1
+- ] - widget width + 1
+- , - widget height - 1
+- . - widget height + 1
 
 # How to create ur own widget
 - Ur class should be in ```include/custom_widgets/``` and named like SomeWidget.hpp
