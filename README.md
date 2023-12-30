@@ -15,7 +15,7 @@
 
 # Installation
 ```sh
-git clone https://ProggerX/PPM
+git clone https://github.com/ProggerX/PPM
 cd PPM
 just install
 ```
