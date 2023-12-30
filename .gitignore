@@ -5,4 +5,5 @@ cmd_output.txt
 compile_commands.json
 .envrc
 .direnv/
+src/config.hpp
 *output.txt
