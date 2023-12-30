@@ -9,6 +9,7 @@
 - ncursesw library
 - [just](https://github.com/casey/just) (make alternative)
 ### U also need
+- Git (just for git clone)
 - Linux host
 - terminal with unicode support
 
