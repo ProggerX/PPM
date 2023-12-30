@@ -10,8 +10,8 @@ public:
 
 	};
 	virtual void print_text(WINDOW* scr) {
-		system((_cmd + " > '" + std::to_string(_x) + std::to_string(_y) + "_output.txt'&").c_str());
-		std::ifstream file(std::to_string(_x) + std::to_string(_y) + "_output.txt");
+		system((_cmd + " > 'ppm-cache/" + std::to_string(_x) + std::to_string(_y) + "_output.txt'&").c_str());
+		std::ifstream file("ppm-cache/" + std::to_string(_x) + std::to_string(_y) + "_output.txt");
 		std::vector<std::string> lines;
 		std::string tmp;
 		while(std::getline(file, tmp)) lines.push_back(tmp);

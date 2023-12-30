@@ -1,16 +1,29 @@
 # PPM is highly-customizable dashboard with widgets
 
 ### You can create your own widgets on c++!
+#### WARNING!!! Read "usage" section carefully
 
 # Requirements:
 ### U need to recompile ppm on every config change, so:
 - compiler (i use g++)
 - ncursesw library
+- [just](https://github.com/casey/just) (make alternative)
 ### U also need
 - Linux host
 - terminal with unicode support
 
+# Installation
+```sh
+git clone https://ProggerX/PPM
+cd PPM
+just install
+```
+
 # Usage:
+```sh
+ppm
+```
+### Keymaps:
 q - exit
 Tab - select next widget
 Events only captured by selected widget

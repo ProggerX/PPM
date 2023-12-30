@@ -8,3 +8,6 @@ run:
 
 clean:
 	rm -rf ./out ./*output.txt
+
+install: build
+	cp ./out ~/.local/bin/ppm && mkdir -p ~/.local/bin/ppm-cache

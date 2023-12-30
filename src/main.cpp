@@ -29,6 +29,7 @@ void get_global_events(char ch, std::vector<Widget*>& wgts) {
 
 int main() {
 	setlocale(LC_ALL, "");
+	system("mkdir ppm-cache");
 
 	Stopwatch stpw;
 	stpw.start();
@@ -62,5 +63,6 @@ int main() {
 		}
 		refresh();
 	}
+	system("rm -rf ppm-cache");
 	endwin();
 }
