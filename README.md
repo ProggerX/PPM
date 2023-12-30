@@ -22,6 +22,11 @@ cd PPM
 just first_install
 ```
 
+# Update
+```sh
+just update
+```
+
 # Usage:
 ```sh
 ppm

@@ -14,3 +14,8 @@ install: build
 
 first_install: install
 	cp ./src/example_config.hpp ./src/config.hpp
+
+update:
+	git pull
+	just build
+	just install
