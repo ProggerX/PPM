@@ -12,14 +12,14 @@
 - Git (just for git clone)
 - Linux host
 - terminal with unicode support
-### Requirements for default(example) config:
+### Requirements for example config:
 - cowsay
 
 # Installation
 ```sh
 git clone https://github.com/ProggerX/PPM
 cd PPM
-just install
+just first_install
 ```
 
 # Usage:

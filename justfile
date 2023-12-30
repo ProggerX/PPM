@@ -10,4 +10,7 @@ clean:
 	rm -rf ./out ./*output.txt
 
 install: build
-	cp ./out ~/.local/bin/ppm && mkdir -p ~/.local/bin/ppm-cache
+	cp ./out ~/.local/bin/ppm
+
+first_install: install
+	cp ./src/example_config.hpp ./src/config.hpp
