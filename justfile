@@ -12,8 +12,9 @@ clean:
 install: build
 	cp ./out ~/.local/bin/ppm
 
-first_install: install
+first_install:
 	cp ./src/example_config.hpp ./src/config.hpp
+	just install
 
 update:
 	git pull
