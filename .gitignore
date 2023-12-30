@@ -6,4 +6,5 @@ compile_commands.json
 .envrc
 .direnv/
 src/config.hpp
+ppm-cache/
 *output.txt
